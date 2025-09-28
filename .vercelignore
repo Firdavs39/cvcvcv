@@ -1,0 +1,23 @@
+# Sensitive/local files
+.gcp
+*.key
+*.pem
+*.p12
+.gcloud/
+# .env должен попасть в функцию (для автоконфигурации). Не игнорируем.
+.genv
+.gitattributes
+
+# Local data and logs
+memory_db/
+logs/
+data/
+
+# Do not upload local creds
+gcp-sa.json
+
+# Dev helpers
+*.bat
+*.ps1
+**/__pycache__/
+**/*.pyc

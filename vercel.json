@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "functions": {
+    "api/telegram-webhook.py": {
+      "includeFiles": "api/requirements.txt"
+    }
+  },
+  "routes": [
+    { "src": "/api/telegram-webhook(/.*)?", "dest": "api/telegram-webhook.py" }
+  ]
+}
+
+
